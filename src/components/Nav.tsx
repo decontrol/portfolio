@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Hamburger from 'hamburger-react';
+import { Squash as Hamburger } from 'hamburger-react';
 
 type NavProps = {
 	navMinimize: boolean;
@@ -24,7 +24,15 @@ const Nav = ({ navMinimize, darkMode }: NavProps) => {
 
 	return (
 		<nav className={classes}>
-			<Hamburger color={hamburgerColor} toggled={isOpen} toggle={setOpen} size={24} />
+			<Hamburger
+				color={hamburgerColor}
+				toggled={isOpen}
+				toggle={setOpen}
+				size={32}
+				duration={0.25}
+				distance='sm'
+				label='Show Menu'
+			/>
 			{isOpen && (
 				<ul className='flex justify-evenly mb-2 mt-[-37px] mx-6'>
 					<li className={navClasses}>

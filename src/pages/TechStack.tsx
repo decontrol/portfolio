@@ -7,7 +7,7 @@ const TechStack = () => {
 	return (
 		<div>
 			<Heading>Tech Stack</Heading>
-			<div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4'>
+			<div className='grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4'>
 				<ScrollLinked>
 					{Object.entries(techMap).map(([$key, obj], index: number) => (
 						<motion.div

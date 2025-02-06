@@ -15,6 +15,7 @@ const TopBar = ({ handleClick, darkMode }: NavBarProps) => {
 		<nav className='nav flex justify-between bg-gradient-to-r from-green-400 to-green-200 dark:bg-gradient-to-r dark:from-green-800 dark:to-green-500  px-5 py-3 items-center'>
 			<Link to='/'>
 				<img src={logo} alt='' className='w-[120px] md:w-[175px]' />
+				<span className='hidden'>Home</span>
 			</Link>
 			<motion.button
 				whileHover={{ opacity: 0.7 }}

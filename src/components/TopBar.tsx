@@ -32,7 +32,7 @@ const TopBar = ({ handleClick, darkMode }: NavBarProps) => {
 					<IconContextProvider size='30' darkMode={darkMode}>
 						{darkMode ? <CiLight /> : <CiDark />}
 					</IconContextProvider>
-					<span className='text-md font-bold text-accent ml-1 mt-[2px]'>
+					<span className='text-sm font-semibold text-accent ml-1 mt-[5px]'>
 						{darkMode ? 'Light Mode' : 'Dark Mode'}
 					</span>
 				</span>

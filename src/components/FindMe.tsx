@@ -4,7 +4,7 @@ import { MdOutlineAttachEmail } from 'react-icons/md';
 import IconContextProvider from '@/context/IconContextProvider';
 import { FaXTwitter } from 'react-icons/fa6';
 
-const TechStack = () => {
+const FindMe = () => {
 	return (
 		<div className='mt-10 md:mt-0'>
 			<Heading>Find me on: </Heading>
@@ -14,7 +14,7 @@ const TechStack = () => {
 						href='https://github.com/decontrol'
 						target='_blank'
 						rel='noopener'
-						className='mb-4 flex items-center'>
+						className='mb-6 flex items-center origin-center hover:opacity-70 hover:-translate-x-1 hover:-trasnlate-y-1'>
 						<FaGithub />
 						<span className='ml-4'>@decontrol</span>
 					</a>
@@ -22,7 +22,7 @@ const TechStack = () => {
 						href='https://linkedin.com/in/hyungjukwon'
 						target='_blank'
 						rel='noopener'
-						className='mb-4 flex items-center'>
+						className='mb-6 flex items-center origin-center hover:opacity-70 hover:-translate-x-1 hover:-trasnlate-y-1'>
 						<FaLinkedin />
 						<span className='ml-4'>@hyungjukwon</span>
 					</a>
@@ -30,7 +30,7 @@ const TechStack = () => {
 						href='https://x.com/skankblocmtl'
 						target='_blank'
 						rel='noopener'
-						className='mb-4 flex items-center'>
+						className='mb-6 flex items-center origin-center hover:opacity-70 hover:-translate-x-1 hover:-trasnlate-y-1'>
 						<FaXTwitter />
 						<span className='ml-4'>@SkankBlocMTL</span>
 					</a>
@@ -38,7 +38,7 @@ const TechStack = () => {
 						href='email:hyungju.kwon@gmail.com'
 						target='_blank'
 						rel='noopener'
-						className='mb-4 flex items-center'>
+						className='mb-6 flex items-center origin-center hover:opacity-70 hover:-translate-x-1 hover:-trasnlate-y-1'>
 						<MdOutlineAttachEmail />
 						<span className='ml-4'>@hyungju.kwon</span>
 					</a>
@@ -48,4 +48,4 @@ const TechStack = () => {
 	);
 };
 
-export default TechStack;
+export default FindMe;

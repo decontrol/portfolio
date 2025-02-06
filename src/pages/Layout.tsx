@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import TopBar from '@/components/TopBar';
 import { useDarkMode } from '@/hooks/useDarkMode';
-import Contact from '@/components/Contact';
+import FindMe from '@/components/FindMe';
 import Footer from '@/components/Footer';
 import Nav from '@/components/Nav';
 
@@ -34,7 +34,7 @@ const Layout = () => {
 						<Outlet />
 					</div>
 					<div className='px-5 md:px-10 md:col-span-1'>
-						<Contact />
+						<FindMe />
 					</div>
 				</div>
 				<Footer />

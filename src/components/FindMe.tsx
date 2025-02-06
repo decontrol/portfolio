@@ -22,7 +22,7 @@ const FindMe = () => {
 						href='https://linkedin.com/in/hyungjukwon'
 						target='_blank'
 						rel='noopener'
-						className='w-fullmb-6 flex items-center origin-center hover:opacity-70 hover:-translate-x-1 hover:-trasnlate-y-1'>
+						className='w-full mb-6 flex items-center origin-center hover:opacity-70 hover:-translate-x-1 hover:-trasnlate-y-1'>
 						<FaLinkedin />
 						<span className='ml-4'>@hyungjukwon</span>
 					</a>
@@ -38,7 +38,7 @@ const FindMe = () => {
 						href='email:hyungju.kwon@gmail.com'
 						target='_blank'
 						rel='noopener'
-						className='mb-6 flex items-center origin-center hover:opacity-70 hover:-translate-x-1 hover:-trasnlate-y-1'>
+						className='w-full mb-6 flex items-center origin-center hover:opacity-70 hover:-translate-x-1 hover:-trasnlate-y-1'>
 						<MdOutlineAttachEmail />
 						<span className='ml-4'>@hyungju.kwon</span>
 					</a>

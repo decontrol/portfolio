@@ -1,8 +1,8 @@
 import axios, { AxiosRequestConfig } from 'axios';
 
 export const axiosInstance = axios.create({
-	baseURL: 'https://portfolio-hoyp.onrender.com/api/v1',
-	// baseURL: BACKEND,
+	baseURL: 'https://hyungjukwon-api.netlify.app/api/v1',
+	// baseURL: 'http://localhost:5000/api/v1',
 });
 
 class APIClient<T> {

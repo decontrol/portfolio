@@ -26,7 +26,7 @@ const Footer = () => {
 								<img
 									width={obj.width}
 									className={obj.className}
-									src={`/techs/logo-${obj.src}.png`}
+									src={`/techs/logo-${obj.src}.webp`}
 									alt={obj.name}
 									title={obj.name}
 								/>

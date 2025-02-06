@@ -8,13 +8,13 @@ const FindMe = () => {
 	return (
 		<div className='mt-10 md:mt-0'>
 			<Heading>Find me on: </Heading>
-			<div className='flex flex-col'>
+			<div className='w-full flex flex-col'>
 				<IconContextProvider size='40'>
 					<a
 						href='https://github.com/decontrol'
 						target='_blank'
 						rel='noopener'
-						className='mb-6 flex items-center origin-center hover:opacity-70 hover:-translate-x-1 hover:-trasnlate-y-1'>
+						className='w-full mb-6 flex items-center origin-center hover:opacity-70 hover:-translate-x-1 hover:-trasnlate-y-1'>
 						<FaGithub />
 						<span className='ml-4'>@decontrol</span>
 					</a>
@@ -22,7 +22,7 @@ const FindMe = () => {
 						href='https://linkedin.com/in/hyungjukwon'
 						target='_blank'
 						rel='noopener'
-						className='mb-6 flex items-center origin-center hover:opacity-70 hover:-translate-x-1 hover:-trasnlate-y-1'>
+						className='w-fullmb-6 flex items-center origin-center hover:opacity-70 hover:-translate-x-1 hover:-trasnlate-y-1'>
 						<FaLinkedin />
 						<span className='ml-4'>@hyungjukwon</span>
 					</a>
@@ -30,7 +30,7 @@ const FindMe = () => {
 						href='https://x.com/skankblocmtl'
 						target='_blank'
 						rel='noopener'
-						className='mb-6 flex items-center origin-center hover:opacity-70 hover:-translate-x-1 hover:-trasnlate-y-1'>
+						className='w-full mb-6 flex items-center origin-center hover:opacity-70 hover:-translate-x-1 hover:-trasnlate-y-1'>
 						<FaXTwitter />
 						<span className='ml-4'>@SkankBlocMTL</span>
 					</a>

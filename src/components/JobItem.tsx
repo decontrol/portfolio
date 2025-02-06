@@ -35,10 +35,12 @@ const JobItem = ({ job }: JobItemProps) => {
 				</CardDescription>
 			</CardHeader>
 			<CardContent>
-				<h2 className='font-bold font-deco text-sm'>{job.title}</h2>
+				<h2 className='font-bold font-deco text-primary text-sm'>{job.title}</h2>
 				<ul className='list-disc list-inside text-sm'>
 					{job.description.map((desc) => (
-						<li key={desc}>{desc}</li>
+						<li className='text-primary' key={desc}>
+							{desc}
+						</li>
 					))}
 				</ul>
 			</CardContent>

@@ -30,10 +30,10 @@ const Layout = () => {
 				<Nav navMinimize={navMinimize} darkMode={darkMode} />
 				<TopBar handleClick={toggleDark} darkMode={darkMode} />
 				<div className='mt-5 mb-10 grid md:grid-cols-4'>
-					<div className='md:col-span-3 px-10'>
+					<div className='md:col-span-3 px-5 md:px-10'>
 						<Outlet />
 					</div>
-					<div className='px-5 md:pl-7 md:pr-7 md:col-span-1'>
+					<div className='px-5 md:px-10 md:pl-7 md:pr-7 md:col-span-1'>
 						<Contact />
 					</div>
 				</div>

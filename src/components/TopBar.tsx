@@ -14,7 +14,7 @@ const TopBar = ({ handleClick, darkMode }: NavBarProps) => {
 	return (
 		<nav className='nav flex justify-between bg-gradient-to-r from-green-400 to-green-200 dark:bg-gradient-to-r dark:from-green-800 dark:to-green-500  px-5 py-3 items-center'>
 			<Link to='/'>
-				<img width='175' src={logo} alt='' />
+				<img src={logo} alt='' className='w-[120px] md:w-[175px]' />
 			</Link>
 			<motion.button
 				whileHover={{ opacity: 0.7 }}
@@ -24,7 +24,7 @@ const TopBar = ({ handleClick, darkMode }: NavBarProps) => {
 					ease: 'easeInOut',
 					type: 'spring',
 				}}
-				className={`${bgColorVal} focus:outline-none border-solid hover:border-dotted hover:opacity-70 border-4 hover:border-accent px-3 py-1 rounded-full`}
+				className={`${bgColorVal} focus:outline-none border-solid hover:border-dotted hover:opacity-70 border-4 hover:border-accent px-2 py-0 md:px-3 md:py-1 rounded-full`}
 				onClick={handleClick}>
 				<span className='flex items-align'>
 					<IconContextProvider size='30' darkMode={darkMode}>

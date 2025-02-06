@@ -10,7 +10,7 @@ const Footer = () => {
 			<div className='flex mb-5'>
 				<div className='mx-auto'>
 					<p className='font-bold mb-4'> Powered by: </p>
-					<div className='flex gap-6 items-center'>
+					<div className='px-5 md:px-10 flex flex-wrap md:flex-nowrap gap-5 justify-center md:gap-7 items-center'>
 						{Object.entries(footerTechMap).map(([$key, obj]) => (
 							<motion.a
 								key={$key}

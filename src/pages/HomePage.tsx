@@ -11,7 +11,7 @@ const HomePage = () => {
 			transition={{ duration: 0.5, ease: 'backInOut' }}
 			exit={{ opacity: 0 }}>
 			<Heading>About myself</Heading>
-			<div className=''>
+			<div className='flex flex-col md:block'>
 				<motion.img
 					initial={{ rotate: '-180deg', scale: 0 }}
 					animate={{ rotate: '0deg', scale: 1 }}
@@ -22,9 +22,9 @@ const HomePage = () => {
 					}}
 					src='/me.png'
 					alt='my mug'
-					className='w-60 h-60 float-left object-cover rounded-full border-8 border-green-400 dark:border-green-700 mr-5 mb-3'
+					className='mx-auto w-60 h-60 md:float-left object-cover rounded-full border-8 border-green-400 dark:border-green-700 md:mr-5 md:ml-0 mb-3'
 				/>
-				<p className='mt-3 inline'>
+				<p className='mt-3 md:inline'>
 					<strong className='font-deco font-semibold text-xl text-accent'>
 						{greeting} I’m Hyungju Kwon
 					</strong>

@@ -14,13 +14,13 @@ type JobItemProps = {
 
 const JobItem = ({ job }: JobItemProps) => {
 	const heightVal = () => {
-		if (job.logo.indexOf('okta') !== -1 || job.logo.indexOf('mojo') !== -1)
-			return 'h-[50px] object-fit dark:invert';
-		if (job.logo.indexOf('mavtek') !== -1 || job.logo.indexOf('gildan') !== -1)
-			return 'h-[30px]  object-fit dark:invert';
+		if (job.logo.indexOf('okta') !== -1) return 'h-[50px] object-fit dark:invert';
+		if (job.logo.indexOf('mojo') !== -1) return 'h-[50px] object-fit dark:brightness-200';
+		if (job.logo.indexOf('mavtek') !== -1) return 'h-[30px]  object-fit dark:invert';
+		if (job.logo.indexOf('gildan') !== -1) return 'h-[30px]  object-fit dark:brightness-200';
 		if (job.logo.indexOf('science') !== -1 || job.logo.indexOf('edelman') !== -1)
-			return 'h-[60px]  object-fit';
-		if (job.logo.indexOf('dynamo') !== -1) return 'h-[40px]  object-fit';
+			return 'h-[60px]  object-fit dark:brightness-200';
+		if (job.logo.indexOf('dynamo') !== -1) return 'h-[40px]  object-fit dark:brightness-200';
 		return 'h-[50px] object-fit';
 	};
 

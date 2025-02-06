@@ -11,16 +11,16 @@ const Nav = ({ navMinimize, darkMode }: NavProps) => {
 	const [classes, setClasses] = useState('');
 	const [isOpen, setOpen] = useState(false);
 
-	const hamburgerColor = darkMode ? '#fff' : '#000';
+	const hamburgerColor = darkMode ? '#fff' : '#75b18f';
 
 	useEffect(() => {
 		setClasses(
-			`relative z-10 bg-background px-10 transition-all duration-500 ease-in-out h-[48px]
+			`relative z-10 bg-background px-5 md:px-10 transition-all duration-500 ease-in-out h-[48px]
       ${navMinimize ? 'mini-nav' : 'full-nav'} ${isOpen ? 'bg-opacity-75 w-full' : ''}`
 		);
 	}, [isOpen, navMinimize]);
 
-	const navClasses = 'text-accent text-mg';
+	const navClasses = 'font-bold font-deco text-accent text-mg';
 
 	return (
 		<nav className={classes}>

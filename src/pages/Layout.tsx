@@ -33,7 +33,7 @@ const Layout = () => {
 					<div className='md:col-span-3 px-5 md:px-10'>
 						<Outlet />
 					</div>
-					<div className='px-5 md:px-10 md:pl-7 md:pr-7 md:col-span-1'>
+					<div className='px-5 md:px-10 md:col-span-1'>
 						<Contact />
 					</div>
 				</div>

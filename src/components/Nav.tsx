@@ -20,7 +20,7 @@ const Nav = ({ navMinimize, darkMode }: NavProps) => {
 		);
 	}, [isOpen, navMinimize]);
 
-	const navClasses = 'font-bold font-deco text-accent text-mg';
+	const navClasses = 'font-semibold font-deco text-accent text-md';
 
 	return (
 		<nav className={classes}>
@@ -29,17 +29,17 @@ const Nav = ({ navMinimize, darkMode }: NavProps) => {
 				<ul className='flex justify-evenly mb-2 mt-[-37px] mx-6'>
 					<li className={navClasses}>
 						<Link onClick={() => setOpen(false)} to='/'>
-							<span className='text-accent text-md'>Home</span>
+							<span className='hover:font-black hover:underline'>Home</span>
 						</Link>
 					</li>
 					<li className={navClasses}>
 						<Link onClick={() => setOpen(false)} to='experience'>
-							<span className='text-accent text-md'>Experience</span>
+							<span className='hover:font-black hover:underline'>Experience</span>
 						</Link>
 					</li>
 					<li className={navClasses}>
 						<Link onClick={() => setOpen(false)} to='techs'>
-							<span className='text-accent text-md'>Tech Stack</span>
+							<span className='hover:font-black hover:underline'>Tech Stack</span>
 						</Link>
 					</li>
 				</ul>

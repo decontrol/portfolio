@@ -17,7 +17,7 @@ const TechStack = () => {
 							ease: 'backInOut',
 							delay: 0.125 * index,
 						}}
-						whileHover={{ scale: 1.2, transition: { duration: 0.5, ease: 'easeInOut' } }}>
+						whileHover={{ scale: 1.2, transition: { duration: 0.25, ease: 'easeInOut' } }}>
 						<div className='flex flex-col justify-start items-center mb-5 h-[80px]'>
 							<div className='flex h-[60px]'>
 								<img

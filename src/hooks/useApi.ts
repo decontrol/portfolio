@@ -1,5 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import APIClient from '@/service/api-client';
+import ms from 'ms';
 import Job from '@/models/Job';
 
 const apiClient = new APIClient<Job>('/jobs');
@@ -7,8 +8,8 @@ const useApi = () =>
 	useQuery({
 		queryKey: ['jobs'],
 		queryFn: apiClient.getAll,
-		staleTime: 5 * 60 * 1000, // Data is fresh for 5 minutes
-		gcTime: 10 * 60 * 1000, //24 hrs
+		staleTime: ms('1d'),
+		gcTime: ms('2 days'),
 	});
 
 export default useApi;

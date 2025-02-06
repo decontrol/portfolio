@@ -20,7 +20,7 @@ const HomePage = () => {
 						ease: 'backInOut',
 						delay: 0.5,
 					}}
-					src='/me.png'
+					src='/me.webp'
 					alt='my mug'
 					className='mx-auto w-60 h-60 md:float-left object-cover rounded-full border-8 border-green-400 dark:border-green-700 md:mr-5 md:ml-0 mb-3'
 				/>

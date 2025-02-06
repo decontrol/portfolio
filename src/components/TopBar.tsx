@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { CiLight, CiDark } from 'react-icons/ci';
-import logo from '@/assets/logo.png';
+import logo from '@/assets/logo.webp';
 import IconContextProvider from '@/context/IconContextProvider';
 import { Link } from 'react-router-dom';
 

@@ -25,7 +25,7 @@ const Layout = () => {
 		}
 	}, [windowSize]);
 	return (
-		<div className='w-screen flex flex-col bg-[url(assets/bg/bg.jpg)] bg-white/50 dark:bg-black/80 bg-repeat bg-blend-lighten dark:bg-blend-darken'>
+		<div className='w-screen flex flex-col bg-[url(assets/bg/bg.webp)] bg-white/50 dark:bg-black/80 bg-repeat bg-blend-lighten dark:bg-blend-darken'>
 			<section className='container flex flex-col rounded-lg opacity-95 grow min-h-lvh mx-auto font-body text-secondary text-md bg-background shadow-lg'>
 				<Nav navMinimize={navMinimize} darkMode={darkMode} />
 				<TopBar handleClick={toggleDark} darkMode={darkMode} />

@@ -30,7 +30,7 @@ const TechStack = () => {
 										<img
 											width={obj.width}
 											className={`${obj.className} mt-auto`}
-											src={`/techs/logo-${obj.src}.png`}
+											src={`/techs/logo-${obj.src}.webp`}
 											alt=''
 											title={obj.name}
 										/>

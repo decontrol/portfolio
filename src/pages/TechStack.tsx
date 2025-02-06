@@ -18,21 +18,24 @@ const TechStack = () => {
 							delay: 0.125 * index,
 						}}
 						whileHover={{ scale: 1.2, transition: { duration: 0.25, ease: 'easeInOut' } }}>
-						<div className='flex flex-col justify-start items-center mb-5 h-[80px]'>
-							<div className='flex h-[60px]'>
-								<img
-									width={obj.width}
-									className={`${obj.className} mt-auto`}
-									src={`/techs/logo-${obj.src}.png`}
-									alt={obj.name}
-									title={obj.name}
-								/>
-							</div>
+						<div className='mb-5 h-[80px]'>
 							<a
 								href={obj.url}
 								target='_blank'
-								className='mt-[15px] text-center text-primary font-bold text-sm'>
-								{obj.name}
+								className='flex flex-col items-center'
+								rel='noopener noreferrer'>
+								<span className='flex h-[60px]'>
+									<img
+										width={obj.width}
+										className={`${obj.className} mt-auto`}
+										src={`/techs/logo-${obj.src}.png`}
+										alt={obj.name}
+										title={obj.name}
+									/>
+								</span>
+								<span className='mt-[15px] text-center text-primary font-bold text-sm'>
+									{obj.name}
+								</span>
 							</a>
 						</div>
 					</motion.div>

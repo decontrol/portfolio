@@ -10,12 +10,13 @@ interface NavBarProps {
 }
 
 const TopBar = ({ handleClick, darkMode }: NavBarProps) => {
-	const bgColorVal = darkMode ? 'bg-green-600 border-green-500' : 'bg-green-100 border-green-200';
+	const bgColorVal = darkMode
+		? 'bg-gradient-to-r from-green-400 to-green-600 border-green-400'
+		: 'bg-gradient-to-r from-green-100 to-green-300 border-green-300';
 	return (
 		<nav className='nav flex justify-between bg-gradient-to-r from-green-400 to-green-200 dark:bg-gradient-to-r dark:from-green-800 dark:to-green-500  px-5 py-3 items-center'>
 			<Link to='/'>
-				<img src={logo} alt='' className='w-[120px] md:w-[175px]' />
-				<span className='hidden'>Home</span>
+				<img aria-label='Link to Home' src={logo} alt='' className='w-[120px] md:w-[175px]' />
 			</Link>
 			<motion.button
 				whileHover={{ opacity: 0.7 }}
@@ -31,7 +32,7 @@ const TopBar = ({ handleClick, darkMode }: NavBarProps) => {
 					<IconContextProvider size='30' darkMode={darkMode}>
 						{darkMode ? <CiLight /> : <CiDark />}
 					</IconContextProvider>
-					<span className='text-md text-accent ml-1 mt-[2px]'>
+					<span className='text-md font-bold text-accent ml-1 mt-[2px]'>
 						{darkMode ? 'Light Mode' : 'Dark Mode'}
 					</span>
 				</span>

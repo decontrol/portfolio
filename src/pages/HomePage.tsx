@@ -1,9 +1,33 @@
+import { useEffect } from 'react';
+import { QueryClient } from '@tanstack/react-query';
 import { motion } from 'motion/react';
 import Heading from '@/components/Heading';
 import useDate from '@/hooks/useDate';
+import APIClient from '@/service/api-client';
+import ms from 'ms';
+import Job from '@/models/Job';
 
 const HomePage = () => {
 	const { greeting } = useDate();
+
+	const queryClient = new QueryClient();
+	const apiClient = new APIClient<Job>('/jobs');
+
+	const prefetchJobs = () => {
+		queryClient.prefetchQuery<Job[]>({
+			queryKey: ['jobs'],
+			queryFn: apiClient.getAll,
+			staleTime: ms('1d'),
+			gcTime: ms('2 days'),
+		});
+	};
+
+	useEffect(() => {
+		prefetchJobs();
+		return () => {
+			queryClient.cancelQueries({ queryKey: ['jobs'] });
+		};
+	}, []);
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}

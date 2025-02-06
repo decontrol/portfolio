@@ -1,13 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-    darkMode: ["class"],
-    content: ["./index.html", "./src/**/*.{ts,tsx,js,jsx}"],
-  	theme: {
-      extend: {
-      fontFamily: {
-        deco: ['"Lora"', "sans-serif"],
-        body: ['"Assistant"', "sans-serif"],
-      },
+	darkMode: ['class'],
+	content: ['./index.html', './src/**/*.{ts,tsx,js,jsx}'],
+	theme: {
+		extend: {
+			fontFamily: {
+				deco: ['"Lora"', 'sans-serif'],
+				body: ['"Assistant"', 'sans-serif'],
+			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
@@ -57,6 +57,5 @@ export default {
 			},
 		},
 	},
-  plugins: [require("tailwindcss-animate")],
-}
-
+	plugins: [require('tailwindcss-animate')],
+};

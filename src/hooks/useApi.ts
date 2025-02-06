@@ -5,7 +5,7 @@ import Job from '@/models/Job';
 
 const apiClient = new APIClient<Job>('/jobs');
 const useApi = () =>
-	useQuery({
+	useQuery<Job[]>({
 		queryKey: ['jobs'],
 		queryFn: apiClient.getAll,
 		staleTime: ms('1d'),

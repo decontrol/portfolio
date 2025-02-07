@@ -37,8 +37,7 @@ const Footer = () => {
 			</div>
 
 			<p className='text-sm font-semibold text-primary'>
-				&copy; <span className='font-medium'>Hyungju Kwon</span>. Made with 👀 in Montreal, Quebec,
-				Canada. {formattedYear}
+				&copy; Hyungju Kwon. Made with 👀 in Montreal, Quebec, Canada. {formattedYear}
 			</p>
 		</section>
 	);

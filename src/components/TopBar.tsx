@@ -32,7 +32,7 @@ const TopBar = ({ handleClick, darkMode }: NavBarProps) => {
 					ease: 'easeInOut',
 					type: 'spring',
 				}}
-				className={`${bgColorVal} focus:outline-none border-solid hover:border-dotted hover:opacity-70 border-4 hover:border-accent px-2 py-0 md:px-3 md:py-1 rounded-full`}
+				className={`${bgColorVal} w-[122px] md:w-[130px] aspect-[129.69/46]focus:outline-none border-solid hover:border-dotted hover:opacity-70 border-4 hover:border-accent px-2 py-0 md:px-3 md:py-1 rounded-full`}
 				onClick={handleClick}>
 				<span className='flex items-align'>
 					<IconContextProvider size='30' darkMode={darkMode}>

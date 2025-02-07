@@ -4,12 +4,16 @@ import { MdOutlineAttachEmail } from 'react-icons/md';
 import IconContextProvider from '@/context/IconContextProvider';
 import { FaXTwitter } from 'react-icons/fa6';
 
-const FindMe = () => {
+type FindMeProps = {
+	darkMode: boolean;
+};
+
+const FindMe = ({ darkMode }: FindMeProps) => {
 	return (
 		<div className='mt-10 md:mt-0'>
 			<Heading>Find me on: </Heading>
 			<div className='w-full flex flex-col'>
-				<IconContextProvider size='40'>
+				<IconContextProvider size='40' darkMode={darkMode} colors={['#75b18f', '#75b18f']}>
 					<a
 						href='https://github.com/decontrol'
 						target='_blank'

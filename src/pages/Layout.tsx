@@ -34,7 +34,7 @@ const Layout = () => {
 						<Outlet />
 					</div>
 					<div className='px-5 md:col-span-1 lg:px-10'>
-						<FindMe />
+						<FindMe darkMode={darkMode} />
 					</div>
 				</div>
 				<Footer />

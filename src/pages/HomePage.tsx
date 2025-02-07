@@ -13,10 +13,10 @@ const HomePage = () => {
 			<Heading>About myself</Heading>
 			<div className='flex flex-col md:block'>
 				<motion.img
-					initial={{ rotate: '-180deg', scale: 0 }}
+					initial={{ rotate: '-360deg', scale: 0 }}
 					animate={{ rotate: '0deg', scale: 1 }}
 					transition={{
-						duration: 0.75,
+						duration: 1,
 						ease: 'backInOut',
 						delay: 0.5,
 					}}

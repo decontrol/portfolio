@@ -19,10 +19,12 @@ const TopBar = ({ handleClick, darkMode }: NavBarProps) => {
 					aria-label='Link to Home'
 					src={logo}
 					alt=''
-					className='w-[120px] aspect-[175/53] md:w-[175px]'
+					className='w-[120px] aspect-[300/122] md:w-[175px]'
 				/>
 			</Link>
-			<div className='flex'>
+			<div
+				className='flex border border-border rounded-full py-1 px-2 bg-background'
+				title='Toggle Dark Mode'>
 				<Switch className={switchClass} checked={darkMode} onCheckedChange={handleClick} />
 				<IconContextProvider size='27' darkMode={darkMode}>
 					{darkMode ? <CiLight /> : <CiDark />}

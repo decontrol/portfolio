@@ -12,7 +12,7 @@ interface NavBarProps {
 const TopBar = ({ handleClick, darkMode }: NavBarProps) => {
 	const switchClass = darkMode ? ' mt-1 mr-2' : 'mt-[3px] mr-2';
 	return (
-		<nav className='nav flex justify-between bg-gradient-to-r from-green-400 to-green-200 dark:bg-gradient-to-r dark:from-green-800 dark:to-green-500 px-5 py-3 items-center'>
+		<nav className='nav flex justify-between bg-gradient-to-r from-green-400 to-green-200 dark:bg-gradient-to-r dark:from-green-800 dark:to-green-500 transition-all duration-500 ease-in-out px-5 py-3 items-center'>
 			<Link to='/'>
 				<img
 					width={175}

@@ -108,7 +108,7 @@ export const techMap: {
 		url: 'https://expressjs.com/',
 	},
 	mongoDb: {
-		width: 80,
+		width: 90,
 		className: 'object-fit',
 		src: 'mongodb',
 		name: 'MongoDB',
@@ -129,7 +129,7 @@ export const techMap: {
 		url: 'https://graphql.org/',
 	},
 	axios: {
-		width: 70,
+		width: 80,
 		className: 'object-fit',
 		src: 'axios',
 		name: 'Axios HTTP',
@@ -214,7 +214,7 @@ export const techMap: {
 		url: 'https://testing-library.com/',
 	},
 	cypress: {
-		width: 50,
+		width: 80,
 		className: 'object-fit',
 		src: 'cypress',
 		name: 'Cypress',
@@ -236,7 +236,7 @@ export const techMap: {
 		url: 'https://creativecloud.adobe.com/',
 	},
 	sanity: {
-		width: 70,
+		width: 80,
 		className: 'object-fit',
 		src: 'sanity',
 		name: 'Sanity',

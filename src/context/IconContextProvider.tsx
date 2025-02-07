@@ -10,11 +10,11 @@ const IconContextProvider = ({ children, size, darkMode }: IconContextProviderPr
 	const colorVal = darkMode ? 'yellow' : 'gray';
 
 	return (
-		<>
+		<div>
 			<IconContext.Provider value={{ color: colorVal, size: size, className: 'global-class-name' }}>
 				{children}
 			</IconContext.Provider>
-		</>
+		</div>
 	);
 };
 

@@ -18,14 +18,14 @@ const TechStack = () => {
 								duration: 0.125,
 								ease: 'backInOut',
 								delay: 0.125 * index,
-							}}
-							whileHover={{ scale: 1.2, transition: { duration: 0.25, ease: 'easeInOut' } }}>
+							}}>
 							<div className='mb-5 h-[80px]'>
-								<a
+								<motion.a
 									href={obj.url}
 									target='_blank'
 									className='flex flex-col items-center'
-									rel='noopener noreferrer'>
+									rel='noopener noreferrer'
+									whileHover={{ scale: 1.2, transition: { duration: 0.25, ease: 'easeInOut' } }}>
 									<span className='flex h-[60px]'>
 										<img
 											width={obj.width}
@@ -38,7 +38,7 @@ const TechStack = () => {
 									<span className='mt-[15px] text-center text-primary font-bold text-sm'>
 										{obj.name}
 									</span>
-								</a>
+								</motion.a>
 							</div>
 						</motion.div>
 					))}

@@ -16,7 +16,7 @@ const FindMe = () => {
 						rel='noopener'
 						className='w-full mb-6 flex items-center origin-center hover:opacity-70 hover:-translate-x-1 hover:-trasnlate-y-1'>
 						<FaGithub />
-						<span className='ml-4'>@decontrol</span>
+						<span className='ml-2'>@decontrol</span>
 					</a>
 					<a
 						href='https://linkedin.com/in/hyungjukwon'
@@ -24,7 +24,7 @@ const FindMe = () => {
 						rel='noopener'
 						className='w-full mb-6 flex items-center origin-center hover:opacity-70 hover:-translate-x-1 hover:-trasnlate-y-1'>
 						<FaLinkedin />
-						<span className='ml-4'>@hyungjukwon</span>
+						<span className='ml-2'>@hyungjukwon</span>
 					</a>
 					<a
 						href='https://x.com/skankblocmtl'
@@ -32,7 +32,7 @@ const FindMe = () => {
 						rel='noopener'
 						className='w-full mb-6 flex items-center origin-center hover:opacity-70 hover:-translate-x-1 hover:-trasnlate-y-1'>
 						<FaXTwitter />
-						<span className='ml-4'>@SkankBlocMTL</span>
+						<span className='ml-2'>@SkankBlocMTL</span>
 					</a>
 					<a
 						href='email:hyungju.kwon@gmail.com'

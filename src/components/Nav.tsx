@@ -15,7 +15,7 @@ const Nav = ({ navMinimize, darkMode }: NavProps) => {
 
 	useEffect(() => {
 		setClasses(
-			`relative z-10 bg-background px-5 md:px-10 transition-all duration-500 ease-in-out h-[48px]
+			`relative z-10 bg-background px-5 lg:px-10 transition-all duration-500 ease-in-out h-[48px]
       ${navMinimize ? 'mini-nav' : 'full-nav'} ${isOpen ? 'bg-opacity-75 w-full' : ''}`
 		);
 	}, [isOpen, navMinimize]);

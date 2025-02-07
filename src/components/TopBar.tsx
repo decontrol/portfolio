@@ -1,20 +1,18 @@
-import { motion } from 'motion/react';
+import { Switch } from '@/components/ui/switch';
 import { CiLight, CiDark } from 'react-icons/ci';
+import { Link } from 'react-router-dom';
 import logo from '@/assets/logo.webp';
 import IconContextProvider from '@/context/IconContextProvider';
-import { Link } from 'react-router-dom';
 
 interface NavBarProps {
 	handleClick: () => void;
-	darkMode?: boolean; // Add this prop for the dark/light mode toggle functionality.
+	darkMode?: boolean;
 }
 
 const TopBar = ({ handleClick, darkMode }: NavBarProps) => {
-	const bgColorVal = darkMode
-		? 'bg-gradient-to-r from-green-400 to-green-600 border-green-400'
-		: 'bg-gradient-to-r from-green-100 to-green-300 border-green-300';
+	const switchClass = darkMode ? ' mt-1 mr-2' : 'mt-[3px] mr-2';
 	return (
-		<nav className='nav flex justify-between bg-gradient-to-r from-green-400 to-green-200 dark:bg-gradient-to-r dark:from-green-800 dark:to-green-500  px-5 py-3 items-center'>
+		<nav className='nav flex justify-between bg-gradient-to-r from-green-400 to-green-200 dark:bg-gradient-to-r dark:from-green-800 dark:to-green-500 px-5 py-3 items-center'>
 			<Link to='/'>
 				<img
 					width={175}
@@ -24,25 +22,12 @@ const TopBar = ({ handleClick, darkMode }: NavBarProps) => {
 					className='w-[120px] aspect-[175/53] md:w-[175px]'
 				/>
 			</Link>
-			<motion.button
-				whileHover={{ opacity: 0.7 }}
-				whileTap={{ scale: 0.95, translateX: '2px', translateY: '2px' }}
-				transition={{
-					duration: 0.125,
-					ease: 'easeInOut',
-					type: 'spring',
-				}}
-				className={`${bgColorVal} w-[122px] md:w-[130px] aspect-[129.69/46]focus:outline-none border-solid hover:border-dotted hover:opacity-70 border-4 hover:border-accent px-2 py-0 md:px-3 md:py-1 rounded-full`}
-				onClick={handleClick}>
-				<span className='flex items-align'>
-					<IconContextProvider size='30' darkMode={darkMode}>
-						{darkMode ? <CiLight /> : <CiDark />}
-					</IconContextProvider>
-					<span className='text-sm font-semibold text-accent ml-1 mt-[5px]'>
-						{darkMode ? 'Light Mode' : 'Dark Mode'}
-					</span>
-				</span>
-			</motion.button>
+			<div className='flex'>
+				<Switch className={switchClass} checked={darkMode} onCheckedChange={handleClick} />
+				<IconContextProvider size='27' darkMode={darkMode}>
+					{darkMode ? <CiLight /> : <CiDark />}
+				</IconContextProvider>
+			</div>
 		</nav>
 	);
 };

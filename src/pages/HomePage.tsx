@@ -25,9 +25,9 @@ const HomePage = () => {
 					className='mx-auto w-60 h-60 md:float-left object-cover rounded-full border-8 border-green-400 dark:border-green-700 md:mr-5 md:ml-0 mb-3'
 				/>
 				<p className='mt-3 md:inline'>
-					<strong className='font-deco font-semibold text-xl text-accent'>
+					<span className='font-deco font-semibold text-xl text-accent'>
 						{greeting} I’m Hyungju Kwon
-					</strong>
+					</span>
 				</p>
 
 				<p className='mt-3'>

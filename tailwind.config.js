@@ -1,12 +1,13 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
 	darkMode: ['class'],
 	content: ['./index.html', './src/**/*.{ts,tsx,js,jsx}'],
 	theme: {
 		extend: {
 			fontFamily: {
-				deco: ['"Lora"', 'sans-serif'],
-				body: ['"Assistant"', 'sans-serif'],
+				deco: ['Lora', 'sans-serif'],
+				body: ['Assistant', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

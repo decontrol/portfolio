@@ -58,7 +58,7 @@ export const techMap: {
 	},
 	next: {
 		width: 50,
-		className: 'object-fit',
+		className: 'object-fit dark:invert',
 		src: 'next',
 		name: 'Next.js',
 		url: 'https://nextjs.org/',
@@ -95,21 +95,21 @@ export const techMap: {
 	},
 	nodeJs: {
 		width: 70,
-		className: 'object-fit',
+		className: 'object-fit dark:brightness-200',
 		src: 'node-js',
 		name: 'Node.js',
 		url: 'https://nodejs.org/en',
 	},
 	expressJs: {
 		width: 70,
-		className: 'object-fit',
+		className: 'object-fit dark:invert',
 		src: 'express',
 		name: 'Expree.js',
 		url: 'https://expressjs.com/',
 	},
 	mongoDb: {
 		width: 90,
-		className: 'object-fit',
+		className: 'object-fit dark:invert dark:brightness-50 dark:sepia-100 dark:saturate-100',
 		src: 'mongodb',
 		name: 'MongoDB',
 		url: 'https://www.mongodb.com/',
@@ -130,7 +130,7 @@ export const techMap: {
 	},
 	axios: {
 		width: 80,
-		className: 'object-fit',
+		className: 'object-fit dark:brightness-200',
 		src: 'axios',
 		name: 'Axios HTTP',
 		url: 'https://axios-http.com/docs/intro',
@@ -144,7 +144,7 @@ export const techMap: {
 	},
 	shadCn: {
 		width: 40,
-		className: 'object-fit',
+		className: 'object-fit  dark:invert',
 		src: 'shadcn',
 		name: 'shadcn',
 		url: 'https://ui.shadcn.com/',
@@ -180,7 +180,7 @@ export const techMap: {
 	},
 	accessibility: {
 		width: 50,
-		className: 'object-fit',
+		className: 'object-fit  dark:invert',
 		src: 'accessibility',
 		name: 'Accessibility',
 		url: 'https://www.w3.org/WAI/fundamentals/accessibility-intro/',
@@ -215,7 +215,7 @@ export const techMap: {
 	},
 	cypress: {
 		width: 80,
-		className: 'object-fit',
+		className: 'object-fit dark:brightness-200',
 		src: 'cypress',
 		name: 'Cypress',
 		url: 'https://www.cypress.io/',
@@ -244,7 +244,7 @@ export const techMap: {
 	},
 	wordPress: {
 		width: 50,
-		className: 'object-fit',
+		className: 'object-fit dark:brightness-200',
 		src: 'wordpress',
 		name: 'WordPress',
 		url: 'https://wordpress.org/',
@@ -320,7 +320,7 @@ export const footerTechMap: {
 	expressJs: {
 		width: 60,
 		className:
-			'object-fit aspect-[480/144] dark:invert dark:brightness-50 dark:sepia-100 aspect-[480/430]dark:saturate-100',
+			'object-fit aspect-[480/144] dark:invert dark:brightness-50 dark:sepia-100 dark:saturate-100',
 		src: 'express',
 		name: 'Expree.js',
 		url: 'https://expressjs.com/',

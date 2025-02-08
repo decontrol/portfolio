@@ -22,12 +22,11 @@ const HomePage = () => {
 					}}
 					src='/me.webp'
 					alt='my mug'
+					title='Hyungju Kwon Photo'
 					className='mx-auto w-60 h-60 md:float-left object-cover rounded-full border-8 border-green-400 dark:border-green-700 md:mr-5 md:ml-0 mb-3'
 				/>
 				<p className='mt-3 md:inline'>
-					<span className='font-deco font-bold text-xl text-accent'>
-						{greeting} I’m Hyungju Kwon
-					</span>
+					<strong className='font-deco text-xl text-accent'>{greeting} I’m Hyungju Kwon</strong>
 				</p>
 
 				<p className='mt-3'>

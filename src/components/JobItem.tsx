@@ -12,35 +12,25 @@ type JobItemProps = {
 	job: Job;
 };
 
-/*************  ✨ Codeium Command ⭐  *************/
-/**
- * JobItem component.
- *
- * @param {JobItemProps} props - The component props.
- * @param {Job} props.job - The job object.
- *
- * @returns {ReactElement} The component.
- *
- * @example
- * <JobItem job={job} />
- */
-/******  db949227-c84b-456f-b8f6-f1787d55df7b  *******/
 const JobItem = ({ job }: JobItemProps) => {
-	const widthClassVal = () => {
-		if (job.logo.indexOf('okta') !== -1) return [130, 'aspect-[151/50] object-fit dark:invert'];
-		if (job.logo.indexOf('mavtek') !== -1) return [160, 'aspect-[231/30] object-fit dark:invert'];
-		if (job.logo.indexOf('mojo') !== -1)
-			return [150, 'aspect-[176/50] object-fit dark:brightness-200'];
-		if (job.logo.indexOf('science') !== -1)
-			return [80, 'aspect-[72/60] object-fit dark:brightness-200'];
-		if (job.logo.indexOf('gildan') !== -1)
-			return [130, 'aspect-[150/30] object-fit dark:brightness-200'];
-		if (job.logo.indexOf('edelman') !== -1)
-			return [140, 'aspect-[137/60]object-fit dark:brightness-200'];
-		if (job.logo.indexOf('sap') !== -1) return [100, 'asapect-[101/50] object-fit'];
-		if (job.logo.indexOf('nurun') !== -1)
-			return [130, 'aspect-[119/50] object-fit dark:brightness-200'];
-		if (job.logo.indexOf('dynamo') !== -1) return [150, 'aspect-[157/40] object-fit'];
+	const getLogoProperties = () => {
+		const logoMappings: { [key: string]: [number, string] } = {
+			okta: [130, 'aspect-[151/50] object-fit dark:invert'],
+			mavtek: [160, 'aspect-[231/30] object-fit dark:invert'],
+			mojo: [150, 'aspect-[176/50] object-fit dark:brightness-200'],
+			science: [80, 'aspect-[72/60] object-fit dark:brightness-200'],
+			gildan: [130, 'aspect-[150/30] object-fit dark:brightness-200'],
+			edelman: [140, 'aspect-[137/60] object-fit dark:brightness-200'],
+			sap: [100, 'aspect-[101/50] object-fit'],
+			nurun: [130, 'aspect-[119/50] object-fit dark:brightness-200'],
+			dynamo: [150, 'aspect-[157/40] object-fit'],
+		};
+
+		for (const [key, properties] of Object.entries(logoMappings)) {
+			if (job.logo.includes(key)) {
+				return properties;
+			}
+		}
 	};
 
 	return (
@@ -50,8 +40,8 @@ const JobItem = ({ job }: JobItemProps) => {
 				<CardDescription>
 					<a href={job.url} className='mt-5' target='_blank'>
 						<img
-							width={(widthClassVal()?.[0] ?? 50) as number}
-							className={(widthClassVal()?.[1] ?? 'object-fit') as string}
+							width={(getLogoProperties()?.[0] ?? 50) as number}
+							className={(getLogoProperties()?.[1] ?? 'object-fit') as string}
 							src={job.logo}
 							alt={job.company}
 						/>

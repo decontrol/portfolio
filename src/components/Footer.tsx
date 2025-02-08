@@ -11,10 +11,10 @@ const Footer = () => {
 				<div className='mx-auto'>
 					<p className='font-bold mb-4 text-accent font-deco'> Powered by: </p>
 					<div className='px-5 md:px-10 flex flex-wrap md:flex-nowrap gap-5 justify-center md:gap-7 items-center'>
-						{Object.entries(footerTechMap).map(([$key, obj]) => (
+						{Object.entries(footerTechMap).map(([$key, { url, src, name, width, className }]) => (
 							<motion.a
 								key={$key}
-								href={obj.url}
+								href={url}
 								target='_blank'
 								rel='noopener noreferrer'
 								initial={{ scale: 1, rotate: '0' }}
@@ -25,11 +25,11 @@ const Footer = () => {
 									type: 'spring',
 								}}>
 								<img
-									width={obj.width}
-									className={obj.className}
-									src={`/techs/logo-${obj.src}.webp`}
-									alt={obj.name}
-									title={obj.name}
+									width={width}
+									className={className}
+									src={`/techs/logo-${src}.webp`}
+									alt={name}
+									title={name}
 								/>
 							</motion.a>
 						))}

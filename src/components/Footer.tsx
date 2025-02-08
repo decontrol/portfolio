@@ -16,6 +16,7 @@ const Footer = () => {
 								key={$key}
 								href={obj.url}
 								target='_blank'
+								rel='noopener noreferrer'
 								initial={{ scale: 1, rotate: '0' }}
 								whileHover={{ scale: 1.2, rotate: '360deg' }}
 								transition={{

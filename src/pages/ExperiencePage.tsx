@@ -1,5 +1,5 @@
 import Spinner from '@/components/Spinner';
-import useApi from '@/hooks/useApi';
+import useJobsApi from '@/hooks/useJobsApi';
 import Job from '@/models/Job';
 import Heading from '@/components/Heading';
 import JobItem from '@/components/JobItem';
@@ -7,7 +7,7 @@ import ScrollLinked from '../components/ScrollLinked';
 import { motion } from 'motion/react';
 
 const ExperiencePage = () => {
-	const { data: jobs, isPending, isError, error } = useApi();
+	const { data: jobs, isPending, isError, error } = useJobsApi();
 
 	if (isError) return <h1>{error.message}</h1>;
 	if (isPending) return <Spinner />;

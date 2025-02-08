@@ -38,7 +38,7 @@ const JobItem = ({ job }: JobItemProps) => {
 			<CardHeader className='pb-3'>
 				<CardTitle className='mb-3 font-bold text-secondary text-xl'>{job.duration}</CardTitle>
 				<CardDescription>
-					<a href={job.url} className='mt-5' target='_blank'>
+					<a href={job.url} className='mt-5' target='_blank' rel='noopener noreferrer'>
 						<img
 							width={(getLogoProperties()?.[0] ?? 50) as number}
 							className={(getLogoProperties()?.[1] ?? 'object-fit') as string}

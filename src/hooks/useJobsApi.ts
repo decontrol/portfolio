@@ -4,7 +4,7 @@ import ms from 'ms';
 import Job from '@/models/Job';
 
 const apiClient = new APIClient<Job>('/jobs');
-const useApi = () =>
+const useJobsApi = () =>
 	useQuery<Job[]>({
 		queryKey: ['jobs'],
 		queryFn: apiClient.getAll,
@@ -12,4 +12,4 @@ const useApi = () =>
 		gcTime: ms('2 days'),
 	});
 
-export default useApi;
+export default useJobsApi;

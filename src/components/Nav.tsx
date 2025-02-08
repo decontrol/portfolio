@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { Squash as Hamburger } from 'hamburger-react';
 
 type NavProps = {
@@ -34,21 +34,30 @@ const Nav = ({ navMinimize, darkMode }: NavProps) => {
 				label='Show Menu'
 			/>
 			{isOpen && (
-				<ul className='flex justify-evenly mb-2 mt-[-37px] mx-6'>
+				<ul className='flex justify-evenly text-sm mb-2 mt-[-37px] mx-6'>
 					<li className={navClasses}>
-						<Link onClick={() => setOpen(false)} to='/'>
+						<NavLink
+							onClick={() => setOpen(false)}
+							to='/'
+							className={({ isActive }) => (isActive ? 'underline font-bold text-md' : 'text-sm')}>
 							<span className='hover:font-black hover:underline'>Home</span>
-						</Link>
+						</NavLink>
 					</li>
 					<li className={navClasses}>
-						<Link onClick={() => setOpen(false)} to='experience'>
+						<NavLink
+							onClick={() => setOpen(false)}
+							to='experience'
+							className={({ isActive }) => (isActive ? 'underline font-bold text-md' : 'text-sm')}>
 							<span className='hover:font-black hover:underline'>Experience</span>
-						</Link>
+						</NavLink>
 					</li>
 					<li className={navClasses}>
-						<Link onClick={() => setOpen(false)} to='techs'>
+						<NavLink
+							onClick={() => setOpen(false)}
+							to='techs'
+							className={({ isActive }) => (isActive ? 'underline font-bold text-md' : 'text-sm')}>
 							<span className='hover:font-black hover:underline'>Tech Stack</span>
-						</Link>
+						</NavLink>
 					</li>
 				</ul>
 			)}

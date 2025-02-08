@@ -3,7 +3,7 @@ import Heading from '@/components/Heading';
 import { techMap } from '@/lib/tech-maps';
 import ScrollLinked from '@/components/ScrollLinked';
 
-const TechStack = () => {
+const TechStackPage = () => {
 	return (
 		<div>
 			<Heading>Tech Stack</Heading>
@@ -48,4 +48,4 @@ const TechStack = () => {
 	);
 };
 
-export default TechStack;
+export default TechStackPage;

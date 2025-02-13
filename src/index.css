@@ -4,12 +4,27 @@
 
 @font-face {
 	font-family: 'Lora';
-	src: url('../public/fonts/Lora/Lora-VariableFont_wght.ttf') format('truetype');
+	src: url('./fonts/Lora/Lora-VariableFont_wght.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'Assistant';
-	src: url('../public//fonts/Assistant/Assistant-VariableFont_wght.ttf') format('truetype');
+	src: url('./fonts/Assistant/Assistant-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('./fonts/Poppins/') format('truetype');
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('./fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('./fonts/Lato/Lato-Light.ttf') format('truetype');
 }
 
 #root {

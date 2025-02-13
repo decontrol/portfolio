@@ -5,10 +5,9 @@ type HeadingProps = {
 const Heading = ({ children }: HeadingProps) => {
 	return (
 		<>
-			<h1 className='text-2xl font-deco font-bold text-accent float-left mb-10'>
-				{children} <hr className='mt-2 text-border w-full' />
+			<h1 className='text-xl font-deco text-accent mb-10 pb-2 border-b border-border '>
+				{children}
 			</h1>
-			<div className='w-[1px] h-[1px] bg-transparent clear-left'></div>
 		</>
 	);
 };

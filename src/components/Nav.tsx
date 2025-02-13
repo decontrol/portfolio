@@ -20,7 +20,7 @@ const Nav = ({ navMinimize, darkMode }: NavProps) => {
 		);
 	}, [isOpen, navMinimize]);
 
-	const navClasses = 'font-semibold font-deco text-accent text-md';
+	const navClasses = ' font-deco text-accent text-md';
 
 	return (
 		<nav className={classes}>
@@ -28,7 +28,7 @@ const Nav = ({ navMinimize, darkMode }: NavProps) => {
 				color={hamburgerColor}
 				toggled={isOpen}
 				toggle={setOpen}
-				size={32}
+				size={18}
 				duration={0.25}
 				distance='sm'
 				label='Show Menu'
@@ -39,8 +39,8 @@ const Nav = ({ navMinimize, darkMode }: NavProps) => {
 						<NavLink
 							onClick={() => setOpen(false)}
 							to='/'
-							className={({ isActive }) => (isActive ? 'underline font-bold text-md' : 'text-sm')}>
-							<span className='hover:font-black hover:underline'>Home</span>
+							className={({ isActive }) => (isActive ? 'underline font-md' : 'text-md')}>
+							<span className='hover:underline'>Home</span>
 						</NavLink>
 					</li>
 					<li className={navClasses}>

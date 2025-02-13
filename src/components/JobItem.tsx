@@ -34,9 +34,9 @@ const JobItem = ({ job }: JobItemProps) => {
 	};
 
 	return (
-		<Card className='border-border mb-5'>
+		<Card className='border-border mb-5 shadow-none'>
 			<CardHeader className='pb-3'>
-				<CardTitle className='mb-3 font-bold text-secondary text-xl'>{job.duration}</CardTitle>
+				<CardTitle className='mb-3 font-bold text-secondary text-lg'>{job.duration}</CardTitle>
 				<CardDescription>
 					<a href={job.url} className='mt-5' target='_blank' rel='noopener noreferrer'>
 						<img
@@ -49,7 +49,7 @@ const JobItem = ({ job }: JobItemProps) => {
 				</CardDescription>
 			</CardHeader>
 			<CardContent>
-				<h2 className='font-bold mt-2 mb-3 font-deco text-secondary text-sm'>{job.title}</h2>
+				<h2 className='mt-2 mb-3 font-deco text-secondary text-sm'>{job.title}</h2>
 				<ul className='list-disc list-inside text-sm'>
 					{job.description.map((desc) => (
 						<li className='text-secondary' key={desc}>

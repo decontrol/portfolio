@@ -29,7 +29,7 @@ const ErrorPage = () => {
 			<section className='container flex flex-col rounded-lg opacity-95 grow min-h-lvh mx-auto font-body text-secondary text-md bg-background transition-all duration-500 ease-in-out shadow-lg'>
 				<Nav navMinimize={navMinimize} darkMode={darkMode} />
 				<TopBar handleClick={toggleDark} darkMode={darkMode} />
-				<div className='mt-5 mb-10 grid md:grid-cols-4'>
+				<div className='mt-2 mb-10 grid md:grid-cols-4'>
 					<div className='md:col-span-3 px-5 lg:px-10'>
 						<motion.h1
 							className='text-9xl font-black text-accent text-center mt-5'

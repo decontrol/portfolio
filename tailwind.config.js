@@ -6,8 +6,8 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				deco: ['Lora', 'sans-serif'],
-				body: ['Assistant', 'sans-serif'],
+				deco: ['Poppins', 'sans-serif'],
+				body: ['Lato', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

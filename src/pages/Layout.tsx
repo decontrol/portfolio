@@ -26,10 +26,10 @@ const Layout = () => {
 	}, [windowSize]);
 	return (
 		<div className='w-screen flex flex-col bg-[url(assets/bg/bg.webp)] bg-white/50 dark:bg-black/80 bg-repeat bg-blend-lighten dark:bg-blend-darken transition-all duration-500 ease-in-out'>
-			<section className='container flex flex-col rounded-lg opacity-95 grow min-h-lvh mx-auto font-body text-secondary text-md bg-background transition-all duration-500 ease-in-out shadow-lg'>
+			<section className='container flex flex-col rounded-lg opacity-95 grow min-h-lvh mx-auto font-body text-secondary text-md bg-background transition-all duration-500 ease-in-out'>
 				<Nav navMinimize={navMinimize} darkMode={darkMode} />
 				<TopBar handleClick={toggleDark} darkMode={darkMode} />
-				<div className='mt-5 mb-10 grid md:grid-cols-4'>
+				<div className='mt-2 mb-10 grid md:grid-cols-4'>
 					<div className='md:col-span-3 px-5 lg:px-10'>
 						<Outlet />
 					</div>

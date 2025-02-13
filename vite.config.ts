@@ -13,12 +13,22 @@ export default defineConfig({
 					{
 						name: 'Lora',
 						local: 'Lora',
-						src: './public/fonts/Lora/Lora-Italic-VariableFont_wght.ttf',
+						src: './fonts/Lora/Lora-Italic-VariableFont_wght.ttf',
 					},
 					{
 						name: 'Assistant',
 						local: 'Assistant',
-						src: './public/fonts/Assistant/Assistant-VariableFont_wght.ttf',
+						src: './fonts/Assistant/Assistant-VariableFont_wght.ttf',
+					},
+					{
+						name: 'Poppins',
+						local: 'Poppins',
+						src: './fonts/Poppins/Poppins-SemiBold.ttf',
+					},
+					{
+						name: 'Lato',
+						local: 'Lato',
+						src: './fonts/Lato/Lato-Regular.ttf',
 					},
 				],
 			},

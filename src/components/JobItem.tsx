@@ -11,28 +11,26 @@ import {
 type JobItemProps = {
 	job: Job;
 };
-
-const JobItem = ({ job }: JobItemProps) => {
-	const getLogoProperties = () => {
-		const logoMappings: { [key: string]: [number, string] } = {
-			okta: [130, 'aspect-[151/50] object-fit dark:invert'],
-			mavtek: [160, 'aspect-[231/30] object-fit dark:invert'],
-			mojo: [150, 'aspect-[176/50] object-fit dark:brightness-200'],
-			science: [80, 'aspect-[72/60] object-fit dark:brightness-200'],
-			gildan: [130, 'aspect-[150/30] object-fit dark:brightness-200'],
-			edelman: [140, 'aspect-[137/60] object-fit dark:brightness-200'],
-			sap: [100, 'aspect-[101/50] object-fit'],
-			nurun: [130, 'aspect-[119/50] object-fit dark:brightness-200'],
-			dynamo: [150, 'aspect-[157/40] object-fit'],
-		};
-
-		for (const [key, properties] of Object.entries(logoMappings)) {
-			if (job.logo.includes(key)) {
-				return properties;
-			}
-		}
+const getLogoProperties = (job: Job): [number, string] | undefined => {
+	const logoMappings: { [key: string]: [number, string] } = {
+		okta: [130, 'aspect-[151/50] object-fit dark:invert'],
+		mavtek: [160, 'aspect-[231/30] object-fit dark:invert'],
+		mojo: [150, 'aspect-[176/50] object-fit dark:brightness-200'],
+		science: [80, 'aspect-[72/60] object-fit dark:brightness-200'],
+		gildan: [130, 'aspect-[150/30] object-fit dark:brightness-200'],
+		edelman: [140, 'aspect-[137/60] object-fit dark:brightness-200'],
+		sap: [100, 'aspect-[101/50] object-fit'],
+		nurun: [130, 'aspect-[119/50] object-fit dark:brightness-200'],
+		dynamo: [150, 'aspect-[157/40] object-fit'],
 	};
 
+	for (const [key, properties] of Object.entries(logoMappings)) {
+		if (job.logo.includes(key)) {
+			return properties;
+		}
+	}
+};
+const JobItem = ({ job }: JobItemProps) => {
 	return (
 		<Card className='border-border mb-5 shadow-none'>
 			<CardHeader className='pb-3'>
@@ -40,8 +38,8 @@ const JobItem = ({ job }: JobItemProps) => {
 				<CardDescription>
 					<a href={job.url} className='mt-5' target='_blank' rel='noopener noreferrer'>
 						<img
-							width={(getLogoProperties()?.[0] ?? 50) as number}
-							className={(getLogoProperties()?.[1] ?? 'object-fit') as string}
+							width={(getLogoProperties(job)?.[0] ?? 50) as number}
+							className={(getLogoProperties(job)?.[1] ?? 'object-fit') as string}
 							src={job.logo}
 							alt={job.company}
 						/>

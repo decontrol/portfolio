@@ -18,8 +18,8 @@ const ExperiencePage = () => {
 				<ScrollLinked>
 					{jobs?.map((job: Job, index: number) => (
 						<motion.div
-							initial={{ scale: 0, opacity: 0 }}
-							animate={{ scale: 1, opacity: 1 }}
+							initial={{ scale: 0, x: '100%', opacity: 0 }}
+							animate={{ scale: 1, x: 0, opacity: 1 }}
 							transition={{
 								duration: 0.5,
 								ease: 'backInOut',
@@ -27,6 +27,13 @@ const ExperiencePage = () => {
 							}}
 							key={job._id}>
 							<JobItem job={job} />
+							{/* <span>{job._id}</span>
+							<span>{job.company}</span>
+							<span>{job.description}</span>
+							<span>{job.duration}</span>
+							<span>{job.logo}</span>
+							<span>{job.title}</span>
+							<span>{new Date(job.updatedAt).toLocaleString()}</span> */}
 						</motion.div>
 					))}
 				</ScrollLinked>

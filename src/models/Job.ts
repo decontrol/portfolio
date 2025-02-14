@@ -6,6 +6,8 @@ type Job = {
 	logo: string;
 	url: string;
 	description: string[];
+	createdAt: string;
+	updatedAt: string;
 };
 
 export default Job;

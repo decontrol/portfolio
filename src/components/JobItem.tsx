@@ -32,7 +32,7 @@ const getLogoProperties = (job: Job): [number, string] | undefined => {
 };
 const JobItem = ({ job }: JobItemProps) => {
 	return (
-		<Card className='border-border mb-5 shadow-none'>
+		<Card className='border-border mb-5 shadow-none transition-all duration-500 ease-in-out'>
 			<CardHeader className='pb-3'>
 				<CardTitle className='mb-3 font-bold text-secondary text-lg'>{job.duration}</CardTitle>
 				<CardDescription>

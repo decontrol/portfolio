@@ -55,7 +55,7 @@ const FindMe = ({ darkMode }: FindMeProps) => {
 			rel: 'noopener noreferrer',
 			className: socialClasses,
 			component: MdOutlineAttachEmail,
-			handle: '@SkankBlocMTL',
+			handle: '@hyungju.kwon',
 		},
 	};
 

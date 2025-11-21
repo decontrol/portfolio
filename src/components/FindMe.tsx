@@ -42,7 +42,7 @@ const FindMe = ({ darkMode }: FindMeProps) => {
 			handle: '@hyungjukwon',
 		},
 		twitter: {
-			href: 'https://github.com/decontrol',
+			href: 'https://x.com/SkankBlocMTL',
 			target: '_blank',
 			rel: 'noopener noreferrer',
 			className: socialClasses,

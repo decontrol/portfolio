@@ -1,7 +1,6 @@
 import axios, { AxiosRequestConfig } from 'axios';
 
 export const axiosInstance = axios.create({
-	// baseURL: 'https://portfolio-hoyp.onrender.com/api/v1',
 	baseURL: 'https://portfolio-api-hjk-production.up.railway.app/api/v1',
 });
 
